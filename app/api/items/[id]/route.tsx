@@ -1,0 +1,1 @@
+export const GET = () => Response.json({ id: 1, title: 'Hey', description: 'Its great' });
