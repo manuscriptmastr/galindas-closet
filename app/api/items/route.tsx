@@ -1,3 +1,3 @@
-import { ITEMS } from '@/app/items'
+import { ITEMS } from "@/app/items";
 
 export const GET = () => Response.json(ITEMS);

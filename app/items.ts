@@ -1,4 +1,4 @@
-import { Item } from '@/app/models/item'
+import { Item } from "@/app/models/item";
 
 // - "Best friend": out of stock and technical illegal
 // - "Autographed Grimmerie": your personal copy of the Grimmerie, signed by the Wizard of Oz himself. Which you won't know since you're not magical enough to open it yourself.
@@ -35,8 +35,22 @@ import { Item } from '@/app/models/item'
 // - Red chalkboard paint: for getting out of class early
 
 export const ITEMS: Item[] = [
-    { id: 1, title: 'Cozy Corner Bed', description: "It's great!"},
-    { id: 2, title: 'Blowout', description: "I'll fix your hair so you're populer. LAR. (Just not quite as popular as me.)"},
-    { id: 3, title: "Unlimited Breadsticks", description: "These will have your soul defying gravity and your garlic breath repelling every winged monkey the madame sends your way." },
-    { id: 4, title: "Pastry", description: "When you don't get your way. Best administered by croons." }
+  { id: 1, title: "Cozy Corner Bed", description: "It's great!" },
+  {
+    id: 2,
+    title: "Blowout",
+    description:
+      "I'll fix your hair so you're populer. LAR. (Just not quite as popular as me.)",
+  },
+  {
+    id: 3,
+    title: "Unlimited Breadsticks",
+    description:
+      "These will have your soul defying gravity and your garlic breath repelling every winged monkey the madame sends your way.",
+  },
+  {
+    id: 4,
+    title: "Pastry",
+    description: "When you don't get your way. Best administered by croons.",
+  },
 ];

@@ -29,9 +29,7 @@ export default function RootLayout({
         <header>
           <Link href="/">Galinda's Closet</Link>
         </header>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer>Made with love by Joshua Martin from data by friends.</footer>
       </body>
     </html>
