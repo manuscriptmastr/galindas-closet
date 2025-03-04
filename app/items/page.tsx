@@ -14,7 +14,7 @@ export default function ItemList() {
 
   return (
     <>
-      <h1>Welcome to Galinda's Closet!</h1>
+      <h1>Welcome to Ga-linda's Closet!</h1>
       <h2>For sale:</h2>
       <ul>
         {items.map(({ id, title, description }) => (
