@@ -10,13 +10,23 @@ npm install
 npm run dev
 ```
 
+## Test
+
+This project uses Playwright for E2E testing.
+
+```shell
+npm run test
+```
+
+VSCode developers can use the Testing panel and recommended extension to run tests interactively.
+
 ## Todo
 
 - [x] Scaffold Next.js application
 - [x] Serve and fetch items list
 - [x] Serve and fetch item detail
 - [x] Add Prettier
-- [ ] Add Playwright E2E test suite
+- [x] Add Playwright E2E test suite
 - [ ] Style item list page
 - [ ] Stle item detail page
 - [ ] Add to cart feature
