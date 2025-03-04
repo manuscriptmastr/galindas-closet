@@ -1,7 +1,7 @@
 "use client";
 
-import styles from "./page.module.css";
 import { Item } from '@/app/models/item'
+import Link from 'next/link';
 import { useEffect, useState } from "react";
 
 export default function ItemList() {
@@ -15,7 +15,7 @@ export default function ItemList() {
       <h1>Welcome to Galinda's Closet!</h1>
       <h2>For sale:</h2>
       <ul>
-        {items.map(({ id, title, description }) => <li key={id}>{title}. {description}</li>)}
+        {items.map(({ id, title, description }) => <li key={id}><Link href={`/items/${id}`}>{title}</Link>. {description}</li>)}
       </ul>
     </>
   );

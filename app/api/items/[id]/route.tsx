@@ -1,1 +1,8 @@
-export const GET = () => Response.json({ id: 1, title: 'Hey', description: 'Its great' });
+import { ITEMS } from "@/app/items";
+
+export const GET = async (req: Request, { params }: { params: Promise<{id: string}>}) => {
+    const { id } = await params;
+    const searchId = parseInt(id, 10);
+    const item = ITEMS.find(({ id }) => id === searchId);
+    return Response.json(item);
+}

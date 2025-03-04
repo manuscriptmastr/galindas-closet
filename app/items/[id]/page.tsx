@@ -11,5 +11,10 @@ export default function ItemDetail() {
         fetch(`/api/items/${id}`).then(res => res.json()).then(setItem);
     },[]);
 
-    return (<h1>{item?.title}</h1>);
+    return (
+        <>
+            <h1>{item?.title}</h1>
+            <p>{item?.description}</p>
+        </>
+    );
 }
