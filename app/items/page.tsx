@@ -1,10 +1,10 @@
 "use client";
 
 import { Item } from "@/app/models/item";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ItemList } from "../components/item-list";
 
-export default function ItemList() {
+export default function ItemListPage() {
   const [items, setItems] = useState<Item[]>([]);
   useEffect(() => {
     fetch("/api/items")
@@ -16,13 +16,7 @@ export default function ItemList() {
     <>
       <h1>Welcome to Ga-linda's Closet!</h1>
       <h2>For sale:</h2>
-      <ul>
-        {items.map(({ id, title, description }) => (
-          <li key={id}>
-            <Link href={`/items/${id}`}>{title}</Link>. {description}
-          </li>
-        ))}
-      </ul>
+      <ItemList items={items} />
     </>
   );
 }

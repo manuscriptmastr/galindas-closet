@@ -1,7 +1,5 @@
 import { Item } from "@/app/models/item";
 
-// - "Best friend": out of stock and technical illegal
-// - "Autographed Grimmerie": your personal copy of the Grimmerie, signed by the Wizard of Oz himself. Which you won't know since you're not magical enough to open it yourself.
 // - "Sharp hat": You'll just melt over this one. It's black, which is this year's pink. You and this hat deserve each other.
 // - "Library book": lightly abused, trampled, and stepped upon by the Prince
 // - "Ball GOWN": Be the swimmingest fish in the sea
@@ -35,22 +33,43 @@ import { Item } from "@/app/models/item";
 // - Red chalkboard paint: for getting out of class early
 
 export const ITEMS: Item[] = [
-  { id: 1, title: "Cozy Corner Bed", description: "It's great!" },
+  {
+    id: 1,
+    title: "Cozy Corner Bed",
+    description: "It's great!",
+    price: "$200.00",
+  },
   {
     id: 2,
     title: "Blowout",
     description:
       "I'll fix your hair so you're populer. LAR. (Just not quite as popular as me.)",
+    price: "$65.00",
   },
   {
     id: 3,
     title: "Unlimited Breadsticks",
     description:
       "These will have your soul defying gravity and your garlic breath repelling every winged monkey the madame sends your way.",
+    price: "$4.99",
   },
   {
     id: 4,
     title: "Pastry",
     description: "When you don't get your way. Best administered by croons.",
+    price: "$3.50",
+  },
+  {
+    id: 5,
+    title: "Best friend",
+    description: "Out of stock and technically scandalocious.",
+    price: "$999999.99",
+  },
+  {
+    id: 6,
+    title: "Autographed Grimmerie",
+    description:
+      "Your personal copy of the Grimmerie, signed by the Wizard of Oz himself. Which you won't know since you're not magical enough to open it yourself.",
+    price: "$14.49",
   },
 ];

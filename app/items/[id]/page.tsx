@@ -4,7 +4,7 @@ import { Item } from "@/app/models/item";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function ItemDetail() {
+export default function ItemDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [item, setItem] = useState<Item>();
   useEffect(() => {

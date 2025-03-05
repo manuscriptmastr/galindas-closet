@@ -10,3 +10,20 @@ body {
   min-height: 100vh;
   padding: 0;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: pink;
+  padding: 2rem;
+  flex: 1;
+}
+
+header,
+footer {
+  background-color: palevioletred;
+  flex-shrink: 0;
+}
