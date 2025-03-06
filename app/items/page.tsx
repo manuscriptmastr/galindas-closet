@@ -16,7 +16,9 @@ export default function ItemListPage() {
   return (
     <>
       <h1 className={styles.header}>Welcome to Ga-linda's Closet!</h1>
-      <ItemList items={items} />
+      <div className={styles["item-list"]}>
+        <ItemList items={items} />
+      </div>
     </>
   );
 }

@@ -1,12 +1,13 @@
 "use client";
 
 import { Item } from "@/app/models/item";
-import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
+import styles from "./page.module.css";
 
 export default function ItemDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const [item, setItem] = useState<Item>();
+  const [item, setItem] = useState<Item | undefined>();
   useEffect(() => {
     fetch(`/api/items/${id}`)
       .then((res) => res.json())
@@ -15,8 +16,13 @@ export default function ItemDetailPage() {
 
   return (
     <>
-      <h1>{item?.title}</h1>
-      <p>{item?.description}</p>
+      {item && (
+        <article className={styles["item-detail"]}>
+          <h1>{item.title}</h1>
+          <img src={item.image.src} alt={item.image.alt} />
+          <p>{item.description}</p>
+        </article>
+      )}
     </>
   );
 }

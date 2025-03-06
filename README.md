@@ -27,6 +27,6 @@ VSCode developers can use the Testing panel and recommended extension to run tes
 - [x] Serve and fetch item detail
 - [x] Add Prettier
 - [x] Add Playwright E2E test suite
-- [ ] Style item list page
+- [x] Style item list page
 - [ ] Stle item detail page
 - [ ] Add to cart feature
