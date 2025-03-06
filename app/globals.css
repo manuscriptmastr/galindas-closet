@@ -1,3 +1,8 @@
+:root {
+  --color-pink-30: pink;
+  --color-pink-50: palevioletred;
+}
+
 *,
 *::after,
 *::before {
@@ -17,13 +22,17 @@ body {
 }
 
 main {
-  background-color: pink;
+  background-color: var(--color-pink-30);
   padding: 2rem;
   flex: 1;
 }
 
 header,
 footer {
-  background-color: palevioletred;
+  background-color: var(--color-pink-50);
   flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
 }

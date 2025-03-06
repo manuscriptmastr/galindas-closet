@@ -1,13 +1,8 @@
 .item-list {
-  --border-radius: 0.5rem;
-  --min-width: 15rem;
-  --space: 2rem;
   display: grid;
-  gap: var(--space);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(var(--min-width), 100%), 1fr)
-  );
+  gap: 2rem;
+  /* "The Grid" design pattern from "Every Layout" */
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
   list-style: none;
   padding: 0;
   max-width: 120ch;
@@ -16,9 +11,18 @@
 }
 
 .item-card {
-  aspect-ratio: 9/16;
-  border-radius: var(--border-radius);
+  aspect-ratio: 2/3;
+  border-radius: 0.5rem;
   display: block;
   background-color: white;
-  border: 0.5rem solid palevioletred;
+  border: 0.5rem solid var(--color-pink-50);
+  padding: 0.5rem;
+}
+
+.item-image {
+  aspect-ratio: 1/1;
+  background-color: gray;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }

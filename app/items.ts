@@ -38,6 +38,10 @@ export const ITEMS: Item[] = [
     title: "Cozy Corner Bed",
     description: "It's great!",
     price: "$200.00",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
   {
     id: 2,
@@ -45,6 +49,10 @@ export const ITEMS: Item[] = [
     description:
       "I'll fix your hair so you're populer. LAR. (Just not quite as popular as me.)",
     price: "$65.00",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
   {
     id: 3,
@@ -52,18 +60,30 @@ export const ITEMS: Item[] = [
     description:
       "These will have your soul defying gravity and your garlic breath repelling every winged monkey the madame sends your way.",
     price: "$4.99",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
   {
     id: 4,
     title: "Pastry",
     description: "When you don't get your way. Best administered by croons.",
     price: "$3.50",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
   {
     id: 5,
     title: "Best friend",
     description: "Out of stock and technically scandalocious.",
     price: "$999999.99",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
   {
     id: 6,
@@ -71,5 +91,9 @@ export const ITEMS: Item[] = [
     description:
       "Your personal copy of the Grimmerie, signed by the Wizard of Oz himself. Which you won't know since you're not magical enough to open it yourself.",
     price: "$14.49",
+    image: {
+      src: "/images/cozy-corner-bed.avif",
+      alt: "Elphaba's tiny bed",
+    },
   },
 ];
