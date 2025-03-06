@@ -2,6 +2,8 @@
 
 A Wicked-themed store with a wicked good selection of various curioisms, powered by Next.js.
 
+https://github.com/user-attachments/assets/75de2796-90f6-4d7f-8360-54be2489ba11
+
 ## Quick Start
 
 ```shell
