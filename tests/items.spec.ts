@@ -25,4 +25,7 @@ test("Clicking on an item navigates to Item Detail", async ({ page }) => {
   expect(await page.getByRole("paragraph").textContent()).toBe(
     FIRST_ITEM.description
   );
+  await expect(
+    page.getByRole("button", { name: `Add to cart — ${FIRST_ITEM.price}` })
+  ).toBeVisible();
 });
