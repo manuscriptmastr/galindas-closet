@@ -3,6 +3,7 @@
 import { Item } from "@/app/models/item";
 import { useEffect, useState } from "react";
 import { ItemList } from "../components/item-list";
+import styles from "./page.module.css";
 
 export default function ItemListPage() {
   const [items, setItems] = useState<Item[]>([]);
@@ -14,8 +15,7 @@ export default function ItemListPage() {
 
   return (
     <>
-      <h1>Welcome to Ga-linda's Closet!</h1>
-      <h2>For sale:</h2>
+      <h1 className={styles.header}>Welcome to Ga-linda's Closet!</h1>
       <ItemList items={items} />
     </>
   );
