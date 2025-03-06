@@ -50,8 +50,8 @@ export const ITEMS: Item[] = [
       "I'll fix your hair so you're populer. LAR. (Just not quite as popular as me.)",
     price: "$65.00",
     image: {
-      src: "/images/cozy-corner-bed.avif",
-      alt: "Elphaba's tiny bed",
+      src: "/images/blowout.jpeg",
+      alt: "Ga-linda's hair",
     },
   },
   {
@@ -61,8 +61,8 @@ export const ITEMS: Item[] = [
       "These will have your soul defying gravity and your garlic breath repelling every winged monkey the madame sends your way.",
     price: "$4.99",
     image: {
-      src: "/images/cozy-corner-bed.avif",
-      alt: "Elphaba's tiny bed",
+      src: "/images/unlimited-breadsticks.jpeg",
+      alt: "Elphaba's Olive Garden breadsticks",
     },
   },
   {
@@ -71,8 +71,8 @@ export const ITEMS: Item[] = [
     description: "When you don't get your way. Best administered by croons.",
     price: "$3.50",
     image: {
-      src: "/images/cozy-corner-bed.avif",
-      alt: "Elphaba's tiny bed",
+      src: "/images/pastry.jpeg",
+      alt: "Chocolate croissant",
     },
   },
   {
@@ -81,8 +81,8 @@ export const ITEMS: Item[] = [
     description: "Out of stock and technically scandalocious.",
     price: "$999999.99",
     image: {
-      src: "/images/cozy-corner-bed.avif",
-      alt: "Elphaba's tiny bed",
+      src: "/images/best-friend.jpeg",
+      alt: "Elphaba Thropp",
     },
   },
   {
@@ -92,8 +92,8 @@ export const ITEMS: Item[] = [
       "Your personal copy of the Grimmerie, signed by the Wizard of Oz himself. Which you won't know since you're not magical enough to open it yourself.",
     price: "$14.49",
     image: {
-      src: "/images/cozy-corner-bed.avif",
-      alt: "Elphaba's tiny bed",
+      src: "/images/autographed-grimmerie.jpeg",
+      alt: "Grimmerie in a museum",
     },
   },
 ];
