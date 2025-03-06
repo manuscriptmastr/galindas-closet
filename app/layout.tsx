@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -24,13 +25,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <header>
-          <Link href="/">Ga-linda's Closet</Link>
+    <html lang="en" className={styles.body}>
+      <body
+        className={`${styles.body} ${geistSans.variable} ${geistMono.variable}`}
+      >
+        <header className={styles.header}>
+          <Link href="/">
+            <h2>Ga-linda's Closet</h2>
+          </Link>
         </header>
-        <main>{children}</main>
-        <footer>Made with love by Joshua Martin from data by friends.</footer>
+        <main className={styles.main}>{children}</main>
+        <footer className={styles.footer}>
+          Made with love by Joshua Martin from data by friends.
+        </footer>
       </body>
     </html>
   );
